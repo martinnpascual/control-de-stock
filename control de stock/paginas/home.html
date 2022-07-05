@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <html lang="es">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+      <title>Golosinas UTN</title>
+      <link rel="stylesheet" href="../CSS/home.css" />
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous"
+      />
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"
+      ></script>
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+      />
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html">Golosinas UTN</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html"
+                  >Inicio</a
+                >
+              </li>
+              <li>
+                <a
+                  class="ocultar-peq efecto rol nav-link"
+                  href="catalogos_categorias.html"
+                  >Catálogos</a
+                >
+              </li>
+              <li>
+                <a
+                  class="ocultar-peq efecto rol nav-link"
+                  href="operacion_entrada.html"
+                  >Operación entrada</a
+                >
+              </li>
+              <li>
+                <a
+                  class="ocultar-peq efecto nav-link"
+                  href="operacion_salida.html"
+                  >Operación salida</a
+                >
+              </li>
+              <li>
+                <a class="ocultar-peq efecto rol nav-link" href="reportes.html"
+                  >Reportes</a
+                >
+              </li>
+              <li>
+                <a
+                  class="ocultar-peq efecto nav-link"
+                  href="ordenes_trabajo.html"
+                  >Órdenes de trabajo</a
+                >
+              </li>
+              <li>
+                <a class="ocultar-peq efecto nav-link" href="../index.html"
+                  >Cerrar sesión</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="contenedor">
+        <div class="titulopage">
+          <h2>INICIO</h2>
+        </div>
+        <div class="parteIzquierda">
+          <h3>Información actualizada</h3>
+          <div class="navegacionInfoActualizada">
+            <br>
+            <button
+              class="itemsNavegacion"
+              id="botonCategoriasDeProductos"
+              type="button"
+              name="button"
+            >
+              Categorías de productos
+            </button>
+            <button
+              class="itemsNavegacion"
+              id="botonClientes"
+              type="button"
+              name="button"
+            >
+              Clientes
+            </button>
+            <button
+              class="itemsNavegacion"
+              id="botonProveedores"
+              type="button"
+              name="button"
+            >
+              Proveedores
+            </button>
+          </div>
+          <div class="contenedorInformacion" id="contenedorInformacion"></div>
+        </div>
+        <div class="parteDerecha">
+          <h3>Productos próximos para abastecer</h3>
+          <div class="tabla1" id="tabla1">
+            <h2>No hay productos escasos</h2>
+          </div>          
+          <div class="abastecer">
+            <div class="textoabastecer">
+              <span>Abastecer productos escasos</span>
+            </div>
+            <div class="botonabastecer">
+              <a href="operacion_entrada.html"
+                ><input
+                  id="botonAbastecer"
+                  type="button"
+                  name="abastecer"
+                  value="Abastecer"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+    <script src="../js/menuResponsive.js" charset="utf-8"></script>
+    <script src="../js/home.js" charset="utf-8"></script>
+    <script src="../js/cargaLocalStorage.js" charset="utf-8"></script>
+  </html>
+</html>

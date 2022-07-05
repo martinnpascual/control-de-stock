@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+  <html lang="es">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Golosinas UTN</title>
+  <link rel="stylesheet" href="CSS/index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  </head>
+  <body>
+          <div class="wrapper">
+            <div class="logo">
+              <img src="imagenes/logo.jpg" alt="">
+            </div>
+            <br>
+            <div class="text-center mt-4 name">
+              Golosinas UTN
+            </div>
+            <br>
+            <form class="p-3 mt-3" name="formulario" action="paginas\home.html" onclick="quitarAlerta()" onsubmit="return validarFormulario()"">
+              <div class="form-field d-flex align-items-center">
+                <span class="far fa-user"></span>
+                <input type="text" name="usuario" id="usuario" placeholder="Usuario">
+              </div>
+              <div class="form-field d-flex align-items-center">
+                <span class="fas fa-key"></span>
+                <input type="password" name="contrasenia" id="contrasenia" placeholder="Contraseña">
+              </div>
+              <input class="btn mt-3" type="submit" name="boton" class="boton" value="Loguearse">
+              <br>
+              <br><br>
+              <div class="mensaje d-none" id="mensaje">
+                <p class="texto">Usuario o contraseña incorrecta</p>
+              </div>
+            </form>
+            <div class="text-center fs-6">
+            </div>
+          </div>
+        </form>
+      </div>
+      </div>
+  </body>
+  <script src="js/index.js" charset="utf-8"></script>
+</html>
